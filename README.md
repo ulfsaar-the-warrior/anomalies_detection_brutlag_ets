@@ -21,7 +21,7 @@
     <br> "In fact, according to *Statistical and Machine Learning forecasting methods: Concerns and ways forward* [5],  ETS outperforms several other ML methods including Long Short Term Memory (LTSM) and Recurrent Neural Networks (RNN) in One-Step Forecasting. Actually, all of the statistical methods have a lower prediction error than the ML methods do." [6] Advanced techniques might not always perform better than old methods like state space models. In case of single seasonal data, Holt-Winters or ARIMA is old but gold. Below is a comparison of ETS methods to other techniques in a case study [6]
 </font>
 
-![Test Image 1](wh vs others.jpg)
+<img src="wh vs others.jpg"/>
 
 <font size="3" >
     <br> This study focuses on the State space models-<b>Holt-Winters Exponential Smoothing</b> to forecast future data that would then be compared to real observations. This is done along with taking into account the <b>Brutlag Algorithm</b>[2] to determine if the observation is an anomaly or not.
@@ -45,8 +45,8 @@ This section's mathematics notations follows [3]
 <br> The $L_{t-1} + P_{t-1} + S_{t-p}$ can be considered as ${\hat y}_{t}$ component, and $d_{t-p}$ is the predicted deviation given by:
     <br> \begin{equation*} d_{t} = \gamma|y_{t}-{\hat y}_{t}| + (1-\gamma)d_{t-p} \tag{7} \end{equation*}
 <br> From $(1)$,$(5)$,$(6)$ and $(7)$,we have:
-     <br> \begin{equation*} {\hat y}_{max_{t}} = {\hat y}_{t} + m.(\gamma|y_{t-p}-{\hat y}_{t-p}| + (1-\gamma)d_{t-2p}) \tag{8} \end{equation*}
-     <br> \begin{equation*} {\hat y}_{min_{t}} = {\hat y}_{t} - m.(\gamma|y_{t-p}-{\hat y}_{t-p}| + (1-\gamma)d_{t-2p}) \tag{9} \end{equation*}
+     <br> \begin{equation} {\hat y}_{max_{t}} = {\hat y}_{t} + m.(\gamma|y_{t-p}-{\hat y}_{t-p}| + (1-\gamma)d_{t-2p}) \tag{8} \end{equation}
+     <br> \begin{equation} {\hat y}_{min_{t}} = {\hat y}_{t} - m.(\gamma|y_{t-p}-{\hat y}_{t-p}| + (1-\gamma)d_{t-2p}) \tag{9} \end{equation}
 <br>The parameters used:
     <uol>
         <li> $k$ number of measurements in time series
