@@ -21,7 +21,7 @@
     <br> "In fact, according to *Statistical and Machine Learning forecasting methods: Concerns and ways forward* [5],  ETS outperforms several other ML methods including Long Short Term Memory (LTSM) and Recurrent Neural Networks (RNN) in One-Step Forecasting. Actually, all of the statistical methods have a lower prediction error than the ML methods do." [6] Advanced techniques might not always perform better than old methods like state space models. In case of single seasonal data, Holt-Winters or ARIMA is old but gold. Below is a comparison of ETS methods to other techniques in a case study [6]
 </font>
 
-<img src="wh vs others.jpg">
+<img src="wh vs others.jpg"/>
 
 <font size="3" >
     <br> This study focuses on the State space models-<b>Holt-Winters Exponential Smoothing</b> to forecast future data that would then be compared to real observations. This is done along with taking into account the <b>Brutlag Algorithm</b>[2] to determine if the observation is an anomaly or not.
